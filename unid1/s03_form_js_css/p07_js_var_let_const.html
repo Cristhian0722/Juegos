@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //var,let y const
+
+        //var permite el error en la redeclaracion
+/*       var xValor1 = 10   
+        console.log(xValor1);       //10
+        var xValor1 = 20            //error no reconocido
+        //xValor1 =20;              //asignacion correcta
+        console.log(xValor1);       //20
+
+        var xValor2 = 30;
+        if(true){
+            console.log(xValor2);    
+            var xValor2 = 40;
+        }
+
+        console.log(xValor2);       //30
+*/
+        //const No permite la redeclaracion
+        //No permite asignacion ,salvos excepciones
+        const xValor1 = 10;
+        console.log(xValor1);        //10
+
+        //const xValor1 = 20;       //No permite redeclarar
+        //xValor1 =20 ;             //No permite redeclarar
+
+        //excepciones
+        const xValor2 =[30,40,50];
+        console.log(xValor2);
+        xValor2.push(60);
+        console.log(xValor2); 
+        
+    </script>
+</body>
+</html>
