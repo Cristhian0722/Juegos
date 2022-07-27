@@ -1,0 +1,81 @@
+.contenedor{
+    background-color: yellowgreen;
+    display: flex;
+    font: 25px normal normal uppercase helvatica, arial, serif;
+    margin:auto;
+    flex-flow: row wrap-reverse;
+    justify-content:center;
+    font-weight:bolder;
+}
+.contenedor div{background-color: yellowgreen;margin: 10px 10px ;padding:20xp ;width: 125px;}
+
+.contenedor1{
+    background-color: aqua;
+    display: flex;
+    font: 14px normal normal uppercase helvatica, arial, serif;
+    margin:auto;
+    justify-content:center;
+    text-align:center;
+}
+
+.contenedor1 div{background-color: gold;margin: 10px 10px ;padding:20xp ;width: 125px;}
+
+.contenedor2{
+    background-color: forestgreen;
+    display: flex;
+    font: 14px normal normal uppercase helvatica, arial, serif;
+    margin:auto;
+    justify-content:center;
+    text-align:center;
+    text-transform: capitalize;
+}
+
+.contenedor2 div{background-color: rgb(0, 195, 255);margin: 10px 10px ;padding:20xp ;width: 125px;}
+
+.contenedor3{
+    background-color: forestgreen;
+    display: flex;
+    font: 14px normal normal uppercase helvatica, arial, serif;
+    margin:auto;
+    justify-content:center;
+    text-align:center;
+    text-transform: capitalize;
+}
+
+.contenedor3 div{background-color: rgb(0, 195, 255);margin: 10px 10px ;padding:20xp ;width: 125px;}
+
+.contenedor4{
+    background-color: forestgreen;
+    display: flex;
+    font: 14px normal normal uppercase helvatica, arial, serif;
+    margin:auto;
+    justify-content:center;
+    text-align:center;
+    text-transform: capitalize;
+}
+
+.contenedor4 div{background-color: rgb(0, 195, 255);margin: 10px 10px ;padding:20xp ;width: 125px;}
+
+.contenedor5{
+    background-color: forestgreen;
+    display: flex;
+    font: 14px normal normal uppercase helvatica, arial, serif;
+    margin:auto;
+    justify-content:center;
+    text-align:center;
+    text-transform: capitalize;
+}
+
+.contenedor5 div{background-color: rgb(0, 195, 255);margin: 10px 10px ;padding:20xp ;width: 125px;}
+
+.contenedor6{
+    background-color: forestgreen;
+    display: flex;
+    font: 14px normal normal uppercase helvatica, arial, serif;
+    margin:auto;
+    justify-content:center;
+    text-align:center;
+    text-transform: capitalize;
+}
+
+.contenedor6 div{background-color: rgb(0, 195, 255);margin: 10px 10px ;padding:20xp ;width: 125px;}

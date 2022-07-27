@@ -1,760 +1,197 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>SB Admin 2 - Dashboard</title>
-
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+<meta charset="utf-8">
+<title>Diseño Web</title>
+<style> body{background-color: orange; border: 1px solid green;} </style>
 </head>
-
-<body id="page-top">
-
-    <!-- Page Wrapper -->
-    <div id="wrapper">
-
-        <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
-            <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
-                </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-            </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Interface
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Pages</span>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-                        <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
-
-            <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
-
-            <!-- Sidebar Message -->
-            <div class="sidebar-card d-none d-lg-flex">
-                <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="...">
-                <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
-                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-            </div>
-
-        </ul>
-        <!-- End of Sidebar -->
-
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content">
-
-                <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
-
-                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                        <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>
-
-                        <!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-bell fa-fw"></i>
-                                <!-- Counter - Alerts -->
-                                <span class="badge badge-danger badge-counter">3+</span>
-                            </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
-                                    Alerts Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-primary">
-                                            <i class="fas fa-file-alt text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-success">
-                                            <i class="fas fa-donate text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
-                                        $290.29 has been deposited into your account!
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                            </div>
-                        </li>
-
-                        <!-- Nav Item - Messages -->
-                        <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-envelope fa-fw"></i>
-                                <!-- Counter - Messages -->
-                                <span class="badge badge-danger badge-counter">7</span>
-                            </a>
-                            <!-- Dropdown - Messages -->
-                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="messagesDropdown">
-                                <h6 class="dropdown-header">
-                                    Message Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div class="font-weight-bold">
-                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
-                                            problem I've been having.</div>
-                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
-                                        <div class="status-indicator"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">I have the photos that you ordered last month, how
-                                            would you like them sent to you?</div>
-                                        <div class="small text-gray-500">Jae Chun · 1d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
-                                        <div class="status-indicator bg-warning"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Last month's report looks great, I am very happy with
-                                            the progress so far, keep up the good work!</div>
-                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
-                                            alt="...">
-                                        <div class="status-indicator bg-success"></div>
-                                    </div>
-                                    <div>
-                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
-                                            told me that people say this to all dogs, even if they aren't good...</div>
-                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-                            </div>
-                        </li>
-
-                        <div class="topbar-divider d-none d-sm-block"></div>
-
-                        <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Settings
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </a>
-                            </div>
-                        </li>
-
-                    </ul>
-
-                </nav>
-                <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div>
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Earnings (Monthly)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Earnings (Annual)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Pending Requests</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content Row -->
-
-                    <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pie Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-4 pb-2">
-                                        <canvas id="myPieChart"></canvas>
-                                    </div>
-                                    <div class="mt-4 text-center small">
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-primary"></i> Direct
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> Social
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-info"></i> Referral
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Content Column -->
-                        <div class="col-lg-6 mb-4">
-
-                            <!-- Project Card Example -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="small font-weight-bold">Server Migration <span
-                                            class="float-right">20%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
-                                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Sales Tracking <span
-                                            class="float-right">40%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
-                                            aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Customer Database <span
-                                            class="float-right">60%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar" role="progressbar" style="width: 60%"
-                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Payout Details <span
-                                            class="float-right">80%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
-                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Account Setup <span
-                                            class="float-right">Complete!</span></h4>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
-                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Color System -->
-                            <div class="row">
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-primary text-white shadow">
-                                        <div class="card-body">
-                                            Primary
-                                            <div class="text-white-50 small">#4e73df</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-success text-white shadow">
-                                        <div class="card-body">
-                                            Success
-                                            <div class="text-white-50 small">#1cc88a</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-info text-white shadow">
-                                        <div class="card-body">
-                                            Info
-                                            <div class="text-white-50 small">#36b9cc</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-warning text-white shadow">
-                                        <div class="card-body">
-                                            Warning
-                                            <div class="text-white-50 small">#f6c23e</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-danger text-white shadow">
-                                        <div class="card-body">
-                                            Danger
-                                            <div class="text-white-50 small">#e74a3b</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-secondary text-white shadow">
-                                        <div class="card-body">
-                                            Secondary
-                                            <div class="text-white-50 small">#858796</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-light text-black shadow">
-                                        <div class="card-body">
-                                            Light
-                                            <div class="text-black-50 small">#f8f9fc</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card bg-dark text-white shadow">
-                                        <div class="card-body">
-                                            Dark
-                                            <div class="text-white-50 small">#5a5c69</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-6 mb-4">
-
-                            <!-- Illustrations -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-center">
-                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
-                                            src="img/undraw_posting_photo.svg" alt="...">
-                                    </div>
-                                    <p>Add some quality, svg illustrations to your project courtesy of <a
-                                            target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a
-                                        constantly updated collection of beautiful svg images that you can use
-                                        completely free and without attribution!</p>
-                                    <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
-                                        unDraw &rarr;</a>
-                                </div>
-                            </div>
-
-                            <!-- Approach -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce
-                                        CSS bloat and poor page performance. Custom CSS classes are used to create
-                                        custom components and custom utility classes.</p>
-                                    <p class="mb-0">Before working with this theme, you should become familiar with the
-                                        Bootstrap framework, especially the utility classes.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-                <!-- /.container-fluid -->
-
-            </div>
-            <!-- End of Main Content -->
-
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
-        </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+<body>
+	<h1> <a target="_blank" href="sitio/">Sitio prueba</a> </h1>
+		
+	<h1> Primera unidad </h1>
+	<h3> 1. Introducción </h3>
+	<ul>
+		<li> <a target="_blank" href="https://www.apachefriends.org/download.html">Instalar y configurar XAMPP</a></li>
+		<li> <a target="_blank" href="https://code.visualstudio.com/download">Instalar Visual Studio Code (IDE)</a></li>
+		<li> <a target="_blank" href="https://www.google.com/intl/es/chrome/">Navegador Chrome</a></li>
+		<li> <a target="_blank" href="https://www.mozilla.org/es-ES/firefox/browsers/windows-64-bit/">Navegador FireFox</a></li>
+		<li> <a target="_blank" href="https://www.000webhost.com/">Publicar en 000webhost</a></li>
+		<li> <a target="_blank" href="https://devcode.la/tutoriales/publicar-tu-web-usando-github-pages/">Publicar GitHub</a></li>
+		<li> <a target="_blank" href="unid1/s01_introducion/t06_pruebas_servidor.html">Pruebas de servidor local</a></li>
+	</ul>
+
+	<h3>2. Páginas web, HTML y JS</h3>
+	<ul>
+		<li> <a target="_blank" href="unid1/s02_pag_html_js/pag00_manuales.html">Manual HTML, CSS, JS</a></li>
+		<li> <a target="_blank" href="unid1/s02_pag_html_js/pag01_diferencia_html_js_css.html">Diferencia entre HTML, CSS y JS</a></li>
+		<li> <a target="_blank" href="unid1/s02_pag_html_js/pag02_definir_css.html">Estructura de HTML4</a></li>
+		<li> <a target="_blank" href="unid1/s02_pag_html_js/pag03_css_html5.html">Estructura de HTML5</a></li>
+		<li> <a target="_blank" href="unid1/s02_pag_html_js/pag04_tabla.html">Tablas</a></li>
+		<li> <a target="_blank" href="unid1/s02_pag_html_js/pag05_js_vent_alert.html">Ventanas 1 - Advertencia</a></li>
+		<li> <a target="_blank" href="unid1/s02_pag_html_js/pag06_js_vent_confirm.html">Ventanas 2 - Confirmar</a></li>
+		<li> <a target="_blank" href="unid1/s02_pag_html_js/pag07_js_vent_prompt.html">Ventanas 3 - Ingresar valor</a></li>
+		<li> <a target="_blank" href="unid1/s02_pag_html_js/pag08_js_eventos.html">Documento sin titulo</a></li>
+		
+	</ul>
+
+	<h3>3. Formularios, JavaScript y estilos</h3>
+	<ul>
+		<li> <a target="_blank" href="https://www.htmlquick.com/es/reference/tags.html">Elementos HTML</a></li>
+		<li> <a target="_blank" href="https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos">Lista de elementos HTML5</a></li>
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p01_html5_etiquetas.html">HTML: Ejemplo de nuevos elementos</a></li>
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p02_html5_audio_video.html">HTML5: Audio y video</a></li>
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p03_html5_canvas_reloj.html">HTML5:Canvas(Reloj)</a></li>
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p04_html5_canvas_mundo.html">HTML5:Canvas(Mundo)</a></li>
+
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p05_html5_dragYdrop1.html">HTML5: Drag & Drop (Bloques)</a></li>
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p06_html5_dragYdrop2.html">HTML5: Drag & Drop (Puzzle)</a></li>
+
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p07_js_var_let_const.html">JS: Variables var, let y const</a></li>
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p08_js_def_fns_cs_return.html">JS: Definir funciones con y sin return</a></li>
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p09_js_tmpl_objetos_destr.html">JS: Variables, objetos y su lectura</a></li>
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p10_js_if_aplicacion1.html">JS: Aplicación 1 con if...else</a></li>
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p11_js_for_aplicacion2.html">JS: Aplicación 2 con for</a></li>		
+		<li> <a target="_blank" href="unid1/s03_form_js_css/p12_form_val_atributo_html5.html">Formularios. Validar con atributos HTML5</a></li>
+	</ul>
+	
+	<h3>4. JavaScript (JS, CSS, form)</h3>
+	<ul>
+		<li> <a target="_blank" href="unid1/s04_val_js_css/p01_val_js_txt_num.html">JS: Validación de texto y número</a></li>
+		<li> <a target="_blank" href="unid1/s04_val_js_css/p02_val_js_listas.html">JS: Validación de listas</a></li>
+		<li> <a target="_blank" href="unid1/s04_val_js_css/p03_val_js_chk_rad.html">JS: Validación de UNA elección tipo CHECK y botón (Radio)</a></li>
+		<li> <a target="_blank" href="unid1/s04_val_js_css/p04_val_js_2chk_y_val.html">JS: Validación de DOS check y verificar valores elegidos</a></li>
+		<li> <a target="_blank" href="unid1/s04_val_js_css/p05_val_js_expr_reg_1.html">JS: Validación con expresiones regulares 1</a></li>
+		<li> <a target="_blank" href="unid1/s04_val_js_css/p06_val_js_expr_reg_2.html">JS: Validación con expresiones regulares 2</a></li>
+		<li> <a target="_blank" href="unid1/s04_val_js_css/p07_val_js_aplicacion1.html">JS: Aplicación 1</a></li>
+		<li> <a target="_blank" href="unid1/s04_val_js_css/p08_val_js_aplicacion2.html">JS: Aplicación 2</a></li>
+		<li> <a target="_blank" href="unid1/s04_val_js_css/p09_val_js_aplicacion3.html">JS: Aplicación 3</a></li>
+		<li> <a target="_blank" href="unid1/s04_val_js_css/p10_val_js_evidencia1.html">JS: Validación texto, número y lista (Elegir mínimo dos opciones)(Evidencia 1)</a></li>
+	</ul>
+
+	<h3>5. Validaciones (Aplicaciones)</h3>
+	<ul>
+		<li> <a target="_blank" href="unid1/s05_aplic_val/p01_validar_a_html.html">Aplicación 1 - Validación con atributos HTML</HTML></a></li>
+		<li> <a target="_blank" href="unid1/s05_aplic_val/p02_validar_js.html">Aplicación 2 - Validación con JS</a></li>
+		<li> <a target="_blank" href="unid1/s05_aplic_val/p03_ventana.html">Aplicación 3 - Ventanas</a></li>
+		<li> <a target="_blank" href="unid1/s05_aplic_val/p04_archivos_img.html">Aplicación 4 - Archivos (img, PDF, etc)</a></li>
+		<li> <a target="_blank" href="unid1/s05_aplic_val/p05_form_contar_x_turno.html">Aplicación 5 - Formularios y tablas - Conteo por TURNO</a></li>
+		<li> <a target="_blank" href="unid1/s05_aplic_val/p06_form_contar_x_genero_evidencia1.html">Aplicación 6 - Formularios y tablas - Conteo por GENERO (Evidencia 1)</a></li>
+		<li> <a target="_blank" href="unid1/s05_aplic_val/p07_form_lista_1c.html">Aplicación 7 - Formulario lista con 1 criterio</a></li>
+		<li> <a target="_blank" href="unid1/s05_aplic_val/p08_form_lista_2c_evidencia2.html">Aplicación 8 - Formulario lista con 2 criterios (Evidencia 2)</a></li>
+	</ul>
+	
+
+	<h3>6. Evaluación - Primera unidad</h3>
+	<ul>
+		<li> <a target="_blank" href="unid1/s06_evaluacion1/p01_aplicacion_val_html5.html">Aplicación 1 - Validación con atributo HTML5</HTML></a></li>
+		<li> <a target="_blank" href="unid1/s06_evaluacion1/p02_aplicacion_val_js.html">Aplicación 2 - Validación con JavaScript</a></li>
+		<li> <a target="_blank" href="unid1/s06_evaluacion1/p03_aplicacion_ventanas.html">Aplicación 3 - Ventanas</a></li>
+		<li> <a target="_blank" href="unid1/s06_evaluacion1/p04_aplicacion_2_crits.html">Aplicación 4 - Listas con dos criterios</a></li>
+	
+	<h3>7. Practica</h3>
+	<ul>
+		<li> <a target="_blank" href="unid1/s07_aplic_val-practica/p07_form_lista_1c.html">practica-Aplicación 7 - Formulario lista con 1 criterio</a></li>
+		<li> <a target="_blank" href="unid1/s07_aplic_val-practica/p08_form_lista_2c_evidencia2.html">practica-Aplicación 8 - Formulario lista con 2 criterios</a></li>
+	
+	<h1> Segunda unidad </h1>
+	<h3> 8. Maquetado con Framework Bootstrap - Fundamentos </h3>
+	<ul>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p01_fbx_fundamt.html">Flexbox: Fundamentos</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p02_fbx_justif_cont.html">Flexbox: Justificar contenido</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p03_fbx_alinear_items.html">Flexbox: Alineación vertical</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p04_fbx_alinear_cont.html">Flexbox: Alineación de contenido</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p05_fbx_centrado_perf.html">Flexbox: Centrado perfecto</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p06_fbx_element_hijos.html">Flexbox: Elementos hijo</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p07_fbx_media_menu.html">Flexbox: Menú responsive</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p08_fbx_media_mak.html">Flexbox: Página responsive</a></li>
+		<li> <a target="_blank" href="https://getbootstrap.com/">Documentación de BootStrap</a></li>		
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p09_btr_inicio_plantilla.html">Bootstrap: Inicio con link a internet</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p10_btr_inicio_descarga.html">Bootstrap: Inicio con descarga de archivos</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p11_btr_tipografia.html">Bootstrap: Página con tipografia</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p12_btr_alineacion.html">Bootstrap: Página con alineaciones</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p13_btr_grid_1.html">Bootstrap: Página con cuadriculas (grid) 1</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p14_btr_grid_2.html">Bootstrap: Página con cuadriculas (grid) 2</a></li>
+		<li> <a target="_blank" href="unid2/s08_mak_btr_fund/p15_btr_grid_2.html">practica(horario)</a></li>
+	</ul>
+	
+	<h3> 9. Maquetado con Framework Bootstrap - Diseño </h3>
+	<ul>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p01_btr_botones.html">Página con botones</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p02_btr_iconos.html">Página con íconos</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p03_btr_controles.html">Página con controles</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p04_btr_form_horiz.html">Página con formularios horizontales</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p05_btr_form_vert.html">Página con formularios verticales</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p06_btr_acordeon.html">Página con menú acordeón</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p07_btr_panel_index.html">Página con paneles</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p08_btr_menus_nav_1.html">Menú de navegación 1</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p09_btr_menus_nav_2.html">Menú de navegación 2</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p10_btr_menus_vert_1.html">Menú vertical 1</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p11_btr_menus_vert_2.html">Menú vertical 2</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p12_btr_menus_vert_3.html">Menú vertical 3</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/p13_btr_menus_vert_4.html">Menú vertical 4</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/plantilla0/index.html">Plantilla bootstrap</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/plantilla1/final.html">Muestra de plantilla 1</a></li>
+		<li> <a target="_blank" href="unid2/s09_mak_btr_dis/plantilla5/index.html">Muestra de plantilla 2</a></li>
+	</ul>
+
+	<h3>11. Evaluación - Segunda unidad</h3>
+	<ul>
+		<li> <a target="_blank" href="unid2/s11_evaluacion2/p01_practica1.html">Pregunta 1</a></li>
+		<li> <a target="_blank" href="unid2/s11_evaluacion2/p02_practica2.html">Pregunta 2</a></li>
+		<li> <a target="_blank" href="unid2/s11_evaluacion2/p03_mktd_sitio1.html">Pregunta 3</a></li>
+		<li> <a target="_blank" href="unid2/s11_evaluacion2/p04_mktd_sitio2.html">Pregunta 4</a></li>
+	</ul>
+
+
+	<h1> Tercera unidad </h1>
+
+	<h3>10. Diseño web, temas y publicación GitHub</h3>
+	<ul>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p01_btr_grid_vert.html">1.-Bootstrap: Página con grip</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p02_btr_gutters_padding.html">2.-Bootstrap: Página con padding</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p03_btr_img_tabls.html">3.-Bootstrap: Página con imagen en tabla</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p04_btr_form_ctrl.html">4.-Bootstrap: Página con form control</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p05_btr_lst_chk_rad.html">5.-Bootstrap: Página con check radio button</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p06_btr_input_grup.html">6.-Bootstrap: Página con imput grup?</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p07_btr_form_h_v.html">7.-Bootstrap: Página con forma</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p08_btr_validacion.html">8.-Bootstrap: Página con validacion</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p09_btr_acord_alert.html">9.-Bootstrap: Página con alerta</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p10_btr_badge_msj.html">10.-Bootstrap: Página con bradge</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p11_btr_nav_breadcrumd.html">11.-Bootstrap: Página con nav</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p12_btr_btns_agrp_close.html">12.-Bootstrap: Página con botones agrupadas</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p13_btr_card_carousel.html">13.-Bootstrap: Página con carusel</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p14_btr_colapse_despl.html">14.-Bootstrap: Página con colapse</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/p15_btr_modal.html">15.-Bootstrap: Página con modal</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/plantilla0/index.html">Tema de bootstrap</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/plantilla1/final.html">Muestra de tema 1</a></li>
+		<li> <a target="_blank" href="unid3/s09_dw_bootstrap/plantilla5/index.html">Muestra de tema 2</a></li>
+	</ul>
+
+	<h3>10. Diseño web, temas y publicación GitHub</h3>
+	<ul>
+		<li> <a target="_blank" href="unid3/s10_btr_tmp_github/p01_btr_nav_tabs_navbar.html">Bootstrap: 16. Página con navegador y tabs</a></li>
+		<li> <a target="_blank" href="unid3/s10_btr_tmp_github/p02_btr_offcanvas_pagnt.html">Bootstrap: 17. Página con offcanvas y paginación</a></li>
+		<li> <a target="_blank" href="unid3/s10_btr_tmp_github/p03_btr_popovers_scrollspy.html">Bootstrap: 18. Página con popovers y scrollspy</a></li>
+		<li> <a target="_blank" href="unid3/s10_btr_tmp_github/p04_btr_spinners_toasts_tooltips.html">Bootstrap: 19. Página con spinners, toasts y tooltips</a></li>
+		<li> <a target="_blank" href="unid3/s10_btr_tmp_github/p05_btr_icons.html">Bootstrap: 20. Página con icons</a></li>
+		<li> <a target="_blank" href="https://getbootstrap.com/docs/5.0/examples/headers/">Ejemplo: 1. Muestra página con logo, menu, buscador e imagen (Elegir)</a></li>
+		<li> <a target="_blank" href="https://getbootstrap.com/docs/5.0/examples/heroes/">Ejemplo: 2. Muestra página con logo, botones e imagen</a></li>
+		<li> <a target="_blank" href="https://getbootstrap.com/docs/5.0/examples/sidebars/">Ejemplo: 3. Muestra página con navegadores verticales</a></li>
+		<li> <a target="_blank" href="unid3/s10_btr_tmp_github/p06_ejm_sidebars_mn_vert_1.html">Ejemplo: 4. Muestra página con navegador vertical 1</a></li>
+		<li> <a target="_blank" href="unid3/s10_btr_tmp_github/p07_ejm_sidebars_mn_vert_2.html">Ejemplo: 5. Muestra página con navegador vertical 2</a></li>
+		<li> <a target="_blank" href="unid3/s10_btr_tmp_github/p08_ejm_sidebars_mn_vert_3.html">Ejemplo: 6. Muestra página con navegador vertical 3</a></li>
+
+		<li> <a target="_blank" href="https://getbootstrap.com/docs/5.0/examples/album/">Ejemplo: 7. Muestra página semejante al album (descripción)</a></li>
+		<li> <a target="_blank" href="https://getbootstrap.com/docs/5.0/examples/product/">Ejemplo: 9. Muestra página para productos (con titulo)</a></li>
+		<li> <a target="_blank" href="https://getbootstrap.com/docs/5.0/examples/carousel/">Ejemplo: 10. Muestra página con galeria y detalle</a></li>
+		<li> <a target="_blank" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">Ejemplo: 11. Muestra con menu, cabera y pie de página </a></li>
+		<li> <a target="_blank" href="unid3/s10_btr_tmp_github/p09_maquetado_sitio.html">Maquetado de un sitio personalizado </a></li>
+
+		<li> <a target="_blank" href="unid3/s10_btr_tmp_github/plantilla1/final.html">Plantilla: Muestra de tema 1</a></li>
+		<li> <a target="_blank" href="unid3/s10_btr_tmp_github/plantilla5/index.html">Plantilla: Muestra de tema 2</a></li>
+	<h1> Cuarta unidad </h1>
+
+		<li> <a target="_blank" href="unid4/index.html">EXAMEN</a></li>
 
 </body>
-
 </html>
