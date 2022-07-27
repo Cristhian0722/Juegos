@@ -1,4 +1,0 @@
-function fnValidar01()
-{
- 
-}
